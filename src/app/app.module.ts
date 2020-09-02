@@ -13,12 +13,12 @@ import { ComponentDocumentationComponent } from './components/component-document
 import { ServicesDocumentationComponent } from './services/services-documentation/services-documentation.component';
 import { DirectivesDocumentationComponent } from './directives/directives-documentation/directives-documentation.component';
 import { PipesModule } from './pipes/pipes.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    CardComponent,
     AccordionComponent,
     ProgressBarComponent,
     StarRatingsComponent,
@@ -27,7 +27,7 @@ import { PipesModule } from './pipes/pipes.module';
     ServicesDocumentationComponent,
     DirectivesDocumentationComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, PipesModule],
+  imports: [BrowserModule, SharedModule, AppRoutingModule, PipesModule],
   providers: [],
   bootstrap: [AppComponent],
 })
