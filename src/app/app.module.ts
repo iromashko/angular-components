@@ -14,6 +14,7 @@ import { ServicesDocumentationComponent } from './services/services-documentatio
 import { DirectivesDocumentationComponent } from './directives/directives-documentation/directives-documentation.component';
 import { PipesModule } from './pipes/pipes.module';
 import { SharedModule } from './shared/shared.module';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SharedModule } from './shared/shared.module';
     ComponentDocumentationComponent,
     ServicesDocumentationComponent,
     DirectivesDocumentationComponent,
+    LoaderComponent,
   ],
   imports: [BrowserModule, SharedModule, AppRoutingModule, PipesModule],
   providers: [],
