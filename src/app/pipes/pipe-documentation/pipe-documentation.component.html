@@ -1,5 +1,17 @@
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Credit Card Formatter'"
+  [subTitle]="'Pipes'"
+>
+  <div body>
+    <p>{{ "1111222233334444" | creditCardFormatter }}</p>
+    <p>{{ "1111111111111111111" | creditCardFormatter }}</p>
+    <p>{{ "a111122223333444" | creditCardFormatter }}</p>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Truncate'"
   [subTitle]="'Pipes'"
 >
