@@ -16,6 +16,7 @@ import { SharedModule } from './shared/shared.module';
 import { LoaderComponent } from './components/loader/loader.component';
 import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DirectivesDocumentationComponent,
     LoaderComponent,
     CreditCardInputComponent,
+    TwitterPostComponent,
   ],
   imports: [
     BrowserModule,
