@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { StarRatingsComponent } from './components/star-ratings/star-ratings.component';
@@ -15,6 +14,8 @@ import { DirectivesDocumentationComponent } from './directives/directives-docume
 import { PipesModule } from './pipes/pipes.module';
 import { SharedModule } from './shared/shared.module';
 import { LoaderComponent } from './components/loader/loader.component';
+import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,8 +29,16 @@ import { LoaderComponent } from './components/loader/loader.component';
     ServicesDocumentationComponent,
     DirectivesDocumentationComponent,
     LoaderComponent,
+    CreditCardInputComponent,
   ],
-  imports: [BrowserModule, SharedModule, AppRoutingModule, PipesModule],
+  imports: [
+    BrowserModule,
+    SharedModule,
+    AppRoutingModule,
+    PipesModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
