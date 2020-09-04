@@ -20,6 +20,7 @@ import { TwitterPostComponent } from './components/twitter-post/twitter-post.com
 import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { DebounceClickDirective } from './directives/debounce-click.directive';
+import { QuoteComponent } from './components/quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { DebounceClickDirective } from './directives/debounce-click.directive';
     LinkedinPostComponent,
     ModalComponent,
     DebounceClickDirective,
+    QuoteComponent,
   ],
   imports: [
     BrowserModule,

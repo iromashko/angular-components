@@ -1,5 +1,20 @@
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Quote'"
+  [subTitle]="'Components'"
+>
+  <app-quote
+    body
+    [quote]="
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi mollitia porro repellendus exercitationem maiores vero praesentium veritatis dolorem, deleniti nulla.'
+    "
+    [author]="'Nisi mollitia'"
+    [occupation]="'Maiores vero praesentium veritatis'"
+  ></app-quote>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Modal'"
   [subTitle]="'Components'"
 >
