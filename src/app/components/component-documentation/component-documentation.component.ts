@@ -25,6 +25,7 @@ export class ComponentDocumentationComponent {
   public toggleValue = false;
 
   public debounceExampleMethod(value: string): void {
-    console.log(`Component Documentation ${value}`);
+    this.debounceOutput = value;
   }
+  public debounceOutput: string;
 }
