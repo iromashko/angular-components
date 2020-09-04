@@ -1,0 +1,6 @@
+<input
+  type="search"
+  [placeholder]="placeHolder"
+  [(ngModel)]="searchTerm"
+  (ngModelChange)="updateSearchTerm($event)"
+/>
