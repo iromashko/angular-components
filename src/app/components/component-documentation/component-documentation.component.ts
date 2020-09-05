@@ -24,8 +24,8 @@ export class ComponentDocumentationComponent {
   public loaderType = LoaderType.Loading;
   public toggleValue = false;
 
+  public debounceOutput = 'Debounce text...';
   public debounceExampleMethod(value: string): void {
     this.debounceOutput = value;
   }
-  public debounceOutput: string;
 }
