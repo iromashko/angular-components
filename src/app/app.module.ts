@@ -25,6 +25,7 @@ import { ToggleComponent } from './components/toggle/toggle.component';
 import { RichTextViewerComponent } from './components/rich-text-viewer/rich-text-viewer.component';
 import { DebounceSearchComponent } from './components/debounce-search/debounce-search.component';
 import { SearchListComponent } from './components/search-list/search-list.component';
+import { CounterComponent } from './components/counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { SearchListComponent } from './components/search-list/search-list.compon
     RichTextViewerComponent,
     DebounceSearchComponent,
     SearchListComponent,
+    CounterComponent,
   ],
   imports: [
     BrowserModule,
