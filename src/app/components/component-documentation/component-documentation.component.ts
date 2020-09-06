@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { LoaderType } from '../loader/models/loader-type.enum';
+import { TabInterface } from '../tabs/tabs.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -28,4 +29,10 @@ export class ComponentDocumentationComponent {
   public debounceExampleMethod(value: string): void {
     this.debounceOutput = value;
   }
+  public tabs: TabInterface[] = [
+    { title: 'Tab 1', active: true },
+    { title: 'Tab 2', active: false },
+  ];
+
+  public selectedTab = 0;
 }
