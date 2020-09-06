@@ -4,8 +4,8 @@
   [subTitle]="'Components'"
 >
   <app-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event">
-    <app-paging *ngIf="selectedTab === 0" [totalItems]="200"></app-paging>
-    <app-counter *ngIf="selectedTab === 1"></app-counter>
+    <app-counter *ngIf="selectedTab === 0"></app-counter>
+    <app-paging *ngIf="selectedTab === 1" [totalItems]="200"></app-paging>
   </app-tabs>
 </app-card>
 
