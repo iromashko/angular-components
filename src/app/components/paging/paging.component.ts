@@ -13,10 +13,10 @@ export class PagingComponent {
   @Output() public pageChange: EventEmitter<number> = new EventEmitter();
 
   public get totalPages(): number {
-    return Math.ceil(this.totalItems || 1) / (this.pageSize || 1);
+    return Math.ceil((this.totalItems || 1) / (this.pageSize || 1));
   }
 
-  public getIsFirstPage(): boolean {
+  public get isFirstPage(): boolean {
     return this.currentPage === 1;
   }
 
@@ -24,29 +24,35 @@ export class PagingComponent {
     return this.currentPage === this.totalPages;
   }
 
-  public get isNextDisabled(): boolean {
-    return this.currentPage + this.step > this.totalPages;
-  }
-
   public get isPreviousDisabled(): boolean {
     return this.currentPage - this.step < 1;
   }
 
+  public get isNextDisabled(): boolean {
+    return this.currentPage + this.step > this.totalPages;
+  }
+
   public get pages(): number[] {
     const pages = [];
+
     if (this.currentPage > 1) {
       pages.push(this.currentPage - 1);
     }
+
     pages.push(this.currentPage);
+
     if (this.currentPage < this.totalPages) {
       pages.push(this.currentPage + 1);
     }
+
     if (this.currentPage + 1 < this.totalPages) {
       pages.push(this.currentPage + 2);
     }
+
     if (this.currentPage + 1 < this.totalPages && this.currentPage === 1) {
       pages.push(this.currentPage + 3);
     }
+
     return pages;
   }
 
