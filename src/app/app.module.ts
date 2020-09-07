@@ -34,6 +34,8 @@ import { OtherModule } from './other/other.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SortTableComponent } from './components/sort-table/sort-table.component';
 import { EmailFormComponent } from './components/email-form/email-form.component';
+import { UserService } from './services/user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -74,8 +76,9 @@ import { EmailFormComponent } from './components/email-form/email-form.component
     FormsModule,
     ReactiveFormsModule,
     OtherModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
