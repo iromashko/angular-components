@@ -32,6 +32,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { RippleDirective } from './directives/ripple.directive';
 import { OtherModule } from './other/other.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SortTableComponent } from './components/sort-table/sort-table.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PagingComponent,
     TabsComponent,
     RippleDirective,
+    SortTableComponent,
   ],
   imports: [
     BrowserModule,
