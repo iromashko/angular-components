@@ -33,6 +33,7 @@ import { RippleDirective } from './directives/ripple.directive';
 import { OtherModule } from './other/other.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SortTableComponent } from './components/sort-table/sort-table.component';
+import { EmailFormComponent } from './components/email-form/email-form.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { SortTableComponent } from './components/sort-table/sort-table.component
     TabsComponent,
     RippleDirective,
     SortTableComponent,
+    EmailFormComponent,
   ],
   imports: [
     BrowserModule,
