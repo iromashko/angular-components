@@ -3,16 +3,24 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { OtherDocumentationComponent } from './other-documentation/other-documentation.component';
+import { FormDirtyGuard } from '../other/form-dirty-guard/form-dirty.guard';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const OTHER_ROUTES = [
   {
     path: 'other',
     component: OtherDocumentationComponent,
+    canDeactivate: [FormDirtyGuard],
   },
 ];
 
 @NgModule({
   declarations: [OtherDocumentationComponent],
-  imports: [CommonModule, SharedModule, RouterModule.forChild(OTHER_ROUTES)],
+  imports: [
+    CommonModule,
+    SharedModule,
+    ReactiveFormsModule,
+    RouterModule.forChild(OTHER_ROUTES),
+  ],
 })
 export class OtherModule {}

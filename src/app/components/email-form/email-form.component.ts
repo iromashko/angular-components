@@ -17,10 +17,10 @@ export class EmailFormComponent {
     this.form = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(2)]],
       email: ['', [Validators.required, Validators.email]],
-      message: ['', [Validators.required]],
+      message: [''],
     });
   }
   public submitMessage() {
-    console.log(`submit message`);
+    console.log(this.form.value);
   }
 }

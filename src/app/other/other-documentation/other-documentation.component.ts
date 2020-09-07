@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeInOutAnimation } from '../../other/fade-in-out/fade-in-out.animation';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { IFormDirty } from '../form-dirty-guard/form-dirty.interface';
 
 @Component({
   selector: 'app-other-documentation',
@@ -7,10 +9,21 @@ import { fadeInOutAnimation } from '../../other/fade-in-out/fade-in-out.animatio
   styleUrls: ['./other-documentation.component.scss'],
   animations: [fadeInOutAnimation],
 })
-export class OtherDocumentationComponent implements OnInit {
+export class OtherDocumentationComponent implements IFormDirty {
   public isInDOM = true;
+  public form: FormGroup;
 
-  constructor() {}
+  constructor(private fb: FormBuilder) {
+    this.initializeForm();
+  }
 
-  ngOnInit(): void {}
+  public submit() {
+    this.form.reset(this.form.value);
+  }
+
+  private initializeForm(): void {
+    this.form = this.fb.group({
+      name: ['', [Validators.required, Validators.minLength(2)]],
+    });
+  }
 }
