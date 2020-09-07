@@ -30,6 +30,8 @@ import { SimpleTableComponent } from './components/simple-table/simple-table.com
 import { PagingComponent } from './components/paging/paging.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { RippleDirective } from './directives/ripple.directive';
+import { OtherModule } from './other/other.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -61,11 +63,13 @@ import { RippleDirective } from './directives/ripple.directive';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     SharedModule,
     AppRoutingModule,
     PipesModule,
     FormsModule,
     ReactiveFormsModule,
+    OtherModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
