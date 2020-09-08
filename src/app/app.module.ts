@@ -77,7 +77,6 @@ import { CountdownTimerComponent } from './components/countdown-timer/countdown-
     ButtonToggleComponent,
     BannerCutOutComponent,
     ScaleDirective,
-    SnackbarComponent,
     SimplePopupComponent,
     CountdownTimerComponent,
   ],

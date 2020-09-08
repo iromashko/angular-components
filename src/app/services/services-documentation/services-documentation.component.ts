@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user.model';
 import { UserService } from '../user.service';
+import { SnackbarService } from '../snackbar.service';
 
 @Component({
   selector: 'app-services-documentation',
@@ -10,7 +11,10 @@ import { UserService } from '../user.service';
 export class ServicesDocumentationComponent implements OnInit {
   public user: User = new User();
 
-  constructor(public userService: UserService) {}
+  constructor(
+    public userService: UserService,
+    public snackbarService: SnackbarService
+  ) {}
 
   ngOnInit(): void {
     this.userService.getUserById(1).subscribe({
@@ -25,5 +29,9 @@ export class ServicesDocumentationComponent implements OnInit {
         console.log(`Done`);
       },
     });
+  }
+
+  public callSnackbar(): void {
+    this.snackbarService.callSnackbar('Snackbar Service Example');
   }
 }

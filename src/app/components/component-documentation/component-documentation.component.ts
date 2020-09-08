@@ -50,7 +50,7 @@ export class ComponentDocumentationComponent {
   @ViewChild(SnackbarComponent) public snackBar: SnackbarComponent;
 
   public snackbarShow(): void {
-    this.snackBar.show();
+    this.snackBar.showMessage('Snackbar Example');
   }
 
   public debounceExampleMethod(value: string): void {
