@@ -43,6 +43,7 @@ import { ScaleDirective } from './directives/scale.directive';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { SimplePopupComponent } from './components/simple-popup/simple-popup.component';
 import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
+import { CopyDirective } from './directives/copy.directive';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { CountdownTimerComponent } from './components/countdown-timer/countdown-
     ScaleDirective,
     SimplePopupComponent,
     CountdownTimerComponent,
+    CopyDirective,
   ],
   imports: [
     BrowserModule,
@@ -91,7 +93,17 @@ import { CountdownTimerComponent } from './components/countdown-timer/countdown-
     OtherModule,
     HttpClientModule,
   ],
-  providers: [UserService],
+  providers: [
+    UserService,
+    {
+      provide: 'Navigator',
+      useValue: navigator,
+    },
+    {
+      provide: 'Document',
+      useValue: document,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
