@@ -41,6 +41,7 @@ import { ButtonToggleComponent } from './components/button-toggle/button-toggle.
 import { BannerCutOutComponent } from './components/banner-cut-out/banner-cut-out.component';
 import { ScaleDirective } from './directives/scale.directive';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
+import { SimplePopupComponent } from './components/simple-popup/simple-popup.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component';
     BannerCutOutComponent,
     ScaleDirective,
     SnackbarComponent,
+    SimplePopupComponent,
   ],
   imports: [
     BrowserModule,
