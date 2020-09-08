@@ -37,6 +37,7 @@ import { EmailFormComponent } from './components/email-form/email-form.component
 import { UserService } from './services/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RibbonComponent } from './components/ribbon/ribbon.component';
+import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { RibbonComponent } from './components/ribbon/ribbon.component';
     SortTableComponent,
     EmailFormComponent,
     RibbonComponent,
+    ButtonToggleComponent,
   ],
   imports: [
     BrowserModule,

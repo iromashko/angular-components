@@ -4,6 +4,7 @@ import { LoaderType } from '../loader/models/loader-type.enum';
 import { TabInterface } from '../tabs/tabs.component';
 import { RibbonType } from '../ribbon/ribbon-type';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
+import { ButtonMeta } from '../button-toggle/button-meta.model';
 
 @Component({
   selector: 'app-component-documentation',
@@ -29,17 +30,22 @@ export class ComponentDocumentationComponent {
   public RibbonType = RibbonType;
   public RibbonLocation = RibbonLocation;
   public ribbonStyle = {
-    type: RibbonType.Success,
-    location: RibbonLocation.TopRight,
+    type: RibbonType.Info,
+    location: RibbonLocation.BottomLeft,
   };
 
   public debounceOutput = 'Debounce text...';
-  public debounceExampleMethod(value: string): void {
-    this.debounceOutput = value;
-  }
   public selectedTab = 0;
   public tabs: TabInterface[] = [
     { title: 'Tab 1', active: true },
     { title: 'Tab 2', active: false },
   ];
+  public buttonToggleOptions: ButtonMeta[] = [
+    new ButtonMeta({ id: 1, title: 'Bold' }),
+    new ButtonMeta({ id: 2, title: 'Italic' }),
+    new ButtonMeta({ id: 3, title: 'Underline' }),
+  ];
+  public debounceExampleMethod(value: string): void {
+    this.debounceOutput = value;
+  }
 }
