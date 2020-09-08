@@ -38,6 +38,7 @@ import { UserService } from './services/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RibbonComponent } from './components/ribbon/ribbon.component';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
+import { BannerCutOutComponent } from './components/banner-cut-out/banner-cut-out.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { ButtonToggleComponent } from './components/button-toggle/button-toggle.
     EmailFormComponent,
     RibbonComponent,
     ButtonToggleComponent,
+    BannerCutOutComponent,
   ],
   imports: [
     BrowserModule,
