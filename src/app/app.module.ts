@@ -42,6 +42,7 @@ import { BannerCutOutComponent } from './components/banner-cut-out/banner-cut-ou
 import { ScaleDirective } from './directives/scale.directive';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { SimplePopupComponent } from './components/simple-popup/simple-popup.component';
+import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { SimplePopupComponent } from './components/simple-popup/simple-popup.com
     ScaleDirective,
     SnackbarComponent,
     SimplePopupComponent,
+    CountdownTimerComponent,
   ],
   imports: [
     BrowserModule,
