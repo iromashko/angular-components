@@ -36,6 +36,7 @@ import { SortTableComponent } from './components/sort-table/sort-table.component
 import { EmailFormComponent } from './components/email-form/email-form.component';
 import { UserService } from './services/user.service';
 import { HttpClientModule } from '@angular/common/http';
+import { RibbonComponent } from './components/ribbon/ribbon.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { HttpClientModule } from '@angular/common/http';
     RippleDirective,
     SortTableComponent,
     EmailFormComponent,
+    RibbonComponent,
   ],
   imports: [
     BrowserModule,
