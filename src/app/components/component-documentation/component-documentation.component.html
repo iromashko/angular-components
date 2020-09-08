@@ -1,3 +1,15 @@
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Snackbar'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-snackbar [message]="'Hello World'"></app-snackbar>
+
+    <button (click)="snackbarShow()">Show</button>
+  </div>
+</app-card>
+
 <app-banner-cut-out></app-banner-cut-out>
 
 <app-card

@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { LoaderType } from '../loader/models/loader-type.enum';
 import { TabInterface } from '../tabs/tabs.component';
 import { RibbonType } from '../ribbon/ribbon-type';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { ButtonMeta } from '../button-toggle/button-meta.model';
+import { SnackbarComponent } from '../snackbar/snackbar.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -45,6 +46,13 @@ export class ComponentDocumentationComponent {
     new ButtonMeta({ id: 2, title: 'Italic' }),
     new ButtonMeta({ id: 3, title: 'Underline' }),
   ];
+
+  @ViewChild(SnackbarComponent) public snackBar: SnackbarComponent;
+
+  public snackbarShow(): void {
+    this.snackBar.show();
+  }
+
   public debounceExampleMethod(value: string): void {
     this.debounceOutput = value;
   }
