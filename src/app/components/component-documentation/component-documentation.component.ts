@@ -34,6 +34,7 @@ export class ComponentDocumentationComponent {
     type: RibbonType.Info,
     location: RibbonLocation.BottomLeft,
   };
+  public loaded = true;
 
   public debounceOutput = 'Debounce text...';
   public selectedTab = 0;

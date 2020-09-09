@@ -46,6 +46,7 @@ import { CountdownTimerComponent } from './components/countdown-timer/countdown-
 import { CopyDirective } from './directives/copy.directive';
 import { LazyLoadImageDirective } from './directives/lazy-load-image.directive';
 import { FooterComponent } from './components/footer/footer.component';
+import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-loader.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +85,7 @@ import { FooterComponent } from './components/footer/footer.component';
     CopyDirective,
     LazyLoadImageDirective,
     FooterComponent,
+    SkeletonLoaderComponent,
   ],
   imports: [
     BrowserModule,
