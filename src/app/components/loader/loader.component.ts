@@ -7,7 +7,7 @@ import { LoaderType } from './models/loader-type.enum';
   styleUrls: ['./loader.component.scss'],
 })
 export class LoaderComponent implements OnInit {
-  @Input() public isLoading = false;
+  @Input() public isLoading = true;
   @Input() public loaderType: LoaderType = LoaderType.Circular;
 
   public LoaderType = LoaderType;

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { LoaderType } from '../loader/models/loader-type.enum';
 import { TabInterface } from '../tabs/tabs.component';
@@ -8,13 +8,15 @@ import { ButtonMeta } from '../button-toggle/button-meta.model';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
 import { SocialMedia } from '../social-media-bar/social-media.enum';
 import { ISocialMediaIcon } from '../social-media-bar/social-media-icon.interface';
+import { delay } from 'rxjs/operators';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-component-documentation',
   templateUrl: './component-documentation.component.html',
   styleUrls: ['./component-documentation.component.scss'],
 })
-export class ComponentDocumentationComponent {
+export class ComponentDocumentationComponent implements OnInit {
   public accordionItems: AccordionItem[] = [
     {
       title: 'Example 1',
@@ -28,8 +30,9 @@ export class ComponentDocumentationComponent {
     },
   ];
   public progressValue = 25;
-  public loaderType = LoaderType.Loading;
+  public loaderType = LoaderType.Circular;
   public toggleValue = false;
+  public loaderState = true;
   public RibbonType = RibbonType;
   public RibbonLocation = RibbonLocation;
   public ribbonStyle = {
@@ -66,5 +69,15 @@ export class ComponentDocumentationComponent {
 
   public debounceExampleMethod(value: string): void {
     this.debounceOutput = value;
+  }
+  ngOnInit(): void {
+    const subscription = of(null)
+      .pipe(delay(1000))
+      .subscribe({
+        complete: () => {
+          this.loaderState = false;
+          subscription.unsubscribe();
+        },
+      });
   }
 }
