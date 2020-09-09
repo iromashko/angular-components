@@ -72,7 +72,6 @@ import { FooterComponent } from './components/footer/footer.component';
     CounterComponent,
     SimpleTableComponent,
     PagingComponent,
-    TabsComponent,
     RippleDirective,
     SortTableComponent,
     EmailFormComponent,
