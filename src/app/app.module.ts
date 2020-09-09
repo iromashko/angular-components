@@ -28,10 +28,8 @@ import { SearchListComponent } from './components/search-list/search-list.compon
 import { CounterComponent } from './components/counter/counter.component';
 import { SimpleTableComponent } from './components/simple-table/simple-table.component';
 import { PagingComponent } from './components/paging/paging.component';
-import { TabsComponent } from './components/tabs/tabs.component';
 import { RippleDirective } from './directives/ripple.directive';
 import { OtherModule } from './other/other.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SortTableComponent } from './components/sort-table/sort-table.component';
 import { EmailFormComponent } from './components/email-form/email-form.component';
 import { UserService } from './services/user.service';
@@ -40,13 +38,13 @@ import { RibbonComponent } from './components/ribbon/ribbon.component';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
 import { BannerCutOutComponent } from './components/banner-cut-out/banner-cut-out.component';
 import { ScaleDirective } from './directives/scale.directive';
-import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { SimplePopupComponent } from './components/simple-popup/simple-popup.component';
 import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 import { CopyDirective } from './directives/copy.directive';
 import { LazyLoadImageDirective } from './directives/lazy-load-image.directive';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-loader.component';
+import { SocialMediaBarComponent } from './components/social-media-bar/social-media-bar.component';
 
 @NgModule({
   declarations: [
@@ -86,10 +84,10 @@ import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-l
     LazyLoadImageDirective,
     FooterComponent,
     SkeletonLoaderComponent,
+    SocialMediaBarComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     SharedModule,
     AppRoutingModule,
     PipesModule,

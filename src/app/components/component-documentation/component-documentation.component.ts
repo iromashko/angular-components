@@ -6,6 +6,8 @@ import { RibbonType } from '../ribbon/ribbon-type';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { ButtonMeta } from '../button-toggle/button-meta.model';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
+import { SocialMedia } from '../social-media-bar/social-media.enum';
+import { ISocialMediaIcon } from '../social-media-bar/social-media-icon.interface';
 
 @Component({
   selector: 'app-component-documentation',
@@ -35,6 +37,14 @@ export class ComponentDocumentationComponent {
     location: RibbonLocation.BottomLeft,
   };
   public loaded = true;
+
+  public socialMedia: ISocialMediaIcon[] = [
+    { href: 'http://facebook.com', type: SocialMedia.Facebook },
+    { href: 'http://facebook.com', type: SocialMedia.Instagram },
+    { href: 'http://facebook.com', type: SocialMedia.LinkedIn },
+    { href: 'http://facebook.com', type: SocialMedia.Twitter },
+    { href: 'http://facebook.com', type: SocialMedia.YouTube },
+  ];
 
   public debounceOutput = 'Debounce text...';
   public selectedTab = 0;
