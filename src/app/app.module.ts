@@ -45,6 +45,7 @@ import { SimplePopupComponent } from './components/simple-popup/simple-popup.com
 import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 import { CopyDirective } from './directives/copy.directive';
 import { LazyLoadImageDirective } from './directives/lazy-load-image.directive';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { LazyLoadImageDirective } from './directives/lazy-load-image.directive';
     CountdownTimerComponent,
     CopyDirective,
     LazyLoadImageDirective,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
