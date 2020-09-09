@@ -46,6 +46,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-loader.component';
 import { SocialMediaBarComponent } from './components/social-media-bar/social-media-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +87,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     SkeletonLoaderComponent,
     SocialMediaBarComponent,
+    BottomSheetComponent,
   ],
   imports: [
     BrowserModule,

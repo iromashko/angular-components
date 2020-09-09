@@ -1,12 +1,20 @@
 <app-card
   [iconClasses]="'fas fa-info-circle'"
-  [title]="'Social Media Bar'"
+  [title]="'Bottom Sheet'"
   [subTitle]="'Components'"
 >
   <div body>
-    <app-social-media-bar [socialMedia]="socialMedia"></app-social-media-bar>
+    <app-bottom-sheet #bottomSheet>
+      <h1 (click)="bottomSheet.hide()">Hello</h1>
+      <h1 (click)="bottomSheet.hide()">World</h1>
+    </app-bottom-sheet>
+  </div>
+  <div footer class="footer">
+    <button (click)="bottomSheet.show()">Show</button>
   </div>
 </app-card>
+
+<app-social-media-bar [socialMedia]="socialMedia"></app-social-media-bar>
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
@@ -295,17 +303,7 @@
   </div>
 </app-card>
 
-<app-card
-  [iconClasses]="'fas fa-info-circle'"
-  [title]="'Loader'"
-  [subTitle]="'Components'"
->
-  <app-loader
-    body
-    [isLoading]="loaderState"
-    [loaderType]="loaderType"
-  ></app-loader>
-</app-card>
+<app-loader body [isLoading]="false" [loaderType]="loaderType"></app-loader>
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
