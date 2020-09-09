@@ -45,6 +45,7 @@ import { LazyLoadImageDirective } from './directives/lazy-load-image.directive';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-loader.component';
 import { SocialMediaBarComponent } from './components/social-media-bar/social-media-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -88,6 +89,7 @@ import { SocialMediaBarComponent } from './components/social-media-bar/social-me
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     SharedModule,
     AppRoutingModule,
     PipesModule,

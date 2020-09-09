@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { PipeDocumentationComponent } from './pipe-documentation/pipe-documentation.component';
 import { RouterModule } from '@angular/router';
@@ -16,6 +15,6 @@ import { FlattenPipe } from './flatten/flatten.pipe';
     CreditCardFormatterPipe,
     FlattenPipe,
   ],
-  imports: [CommonModule, SharedModule, RouterModule.forChild(PIPES_ROUTES)],
+  imports: [SharedModule, RouterModule.forChild(PIPES_ROUTES)],
 })
 export class PipesModule {}

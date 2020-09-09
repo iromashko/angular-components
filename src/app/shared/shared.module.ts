@@ -4,7 +4,6 @@ import { CardComponent } from '../components/card/card.component';
 import { FilterTermPipe } from '../pipes/filter-term/filter-term.pipe';
 import { SnackbarComponent } from '../components/snackbar/snackbar.component';
 import { TabsComponent } from '../components/tabs/tabs.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,7 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SnackbarComponent,
     TabsComponent,
   ],
-  imports: [CommonModule, BrowserAnimationsModule],
+  imports: [CommonModule],
   exports: [CardComponent, FilterTermPipe, SnackbarComponent, TabsComponent],
 })
 export class SharedModule {}
