@@ -44,6 +44,7 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { SimplePopupComponent } from './components/simple-popup/simple-popup.component';
 import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 import { CopyDirective } from './directives/copy.directive';
+import { LazyLoadImageDirective } from './directives/lazy-load-image.directive';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { CopyDirective } from './directives/copy.directive';
     SimplePopupComponent,
     CountdownTimerComponent,
     CopyDirective,
+    LazyLoadImageDirective,
   ],
   imports: [
     BrowserModule,
@@ -102,6 +104,10 @@ import { CopyDirective } from './directives/copy.directive';
     {
       provide: 'Document',
       useValue: document,
+    },
+    {
+      provide: 'Window',
+      useValue: window,
     },
   ],
   bootstrap: [AppComponent],
