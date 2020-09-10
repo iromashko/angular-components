@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PipeDocumentationComponent {
   public flattenData = [1, 2, [3], [5, 6], [7]];
 
+  public html = ' <a href="http://youtube.com" target="_blank">YouTube</a>';
+
   public modifyFlatten(): void {
     this.flattenData.push(3, 5);
   }
