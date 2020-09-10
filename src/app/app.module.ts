@@ -53,6 +53,7 @@ import { PillFiltersComponent } from './components/pill-filters/pill-filters.com
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { PasswordComponent } from './components/password/password.component';
 import { OverlayComponent } from './components/overlay/overlay.component';
+import { AutoFocusDirective } from './directives/auto-focus.directive';
 
 @NgModule({
   declarations: [
@@ -100,6 +101,7 @@ import { OverlayComponent } from './components/overlay/overlay.component';
     NotFoundComponent,
     PasswordComponent,
     OverlayComponent,
+    AutoFocusDirective,
   ],
   imports: [
     BrowserModule,
