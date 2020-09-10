@@ -12,6 +12,13 @@ export class PipeDocumentationComponent {
 
   public stringArray: string[] = ['Lorem', 'Ipsum', 'Dolor', 'Sit'];
 
+  public objectArray: { [key: string]: string }[] = [
+    { content: 'Courses' },
+    { content: 'YouTube' },
+    { content: 'Twitter' },
+    { content: 'LinkedIn' },
+  ];
+
   public modifyFlatten(): void {
     this.flattenData.push(3, 5);
   }

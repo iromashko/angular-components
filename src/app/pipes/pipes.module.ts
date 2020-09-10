@@ -9,6 +9,8 @@ import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-for
 import { FlattenPipe } from './flatten/flatten.pipe';
 import { RichTextPipe } from './rich-text.pipe';
 import { SortByPipe } from './sort-by.pipe';
+import { SortByKeyPipe } from './sort-by-key.pipe';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { SortByPipe } from './sort-by.pipe';
     FlattenPipe,
     RichTextPipe,
     SortByPipe,
+    SortByKeyPipe,
   ],
-  imports: [SharedModule, RouterModule.forChild(PIPES_ROUTES)],
+  imports: [CommonModule, SharedModule, RouterModule.forChild(PIPES_ROUTES)],
 })
 export class PipesModule {}

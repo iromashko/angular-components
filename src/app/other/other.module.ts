@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { OtherDocumentationComponent } from './other-documentation/other-documentation.component';
 import { FormDirtyGuard } from '../other/form-dirty-guard/form-dirty.guard';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 const OTHER_ROUTES = [
   {
