@@ -47,6 +47,7 @@ import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-l
 import { SocialMediaBarComponent } from './components/social-media-bar/social-media-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.component';
+import { FieldsetComponent } from './components/fieldset/fieldset.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +89,7 @@ import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.com
     SkeletonLoaderComponent,
     SocialMediaBarComponent,
     BottomSheetComponent,
+    FieldsetComponent,
   ],
   imports: [
     BrowserModule,
