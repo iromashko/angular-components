@@ -49,6 +49,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.component';
 import { FieldsetComponent } from './components/fieldset/fieldset.component';
 import { PillComponent } from './components/pill/pill.component';
+import { PillFiltersComponent } from './components/pill-filters/pill-filters.component';
 
 @NgModule({
   declarations: [
@@ -92,6 +93,7 @@ import { PillComponent } from './components/pill/pill.component';
     BottomSheetComponent,
     FieldsetComponent,
     PillComponent,
+    PillFiltersComponent,
   ],
   imports: [
     BrowserModule,
