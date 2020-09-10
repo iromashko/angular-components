@@ -10,6 +10,8 @@ export class PipeDocumentationComponent {
 
   public html = ' <a href="http://youtube.com" target="_blank">YouTube</a>';
 
+  public stringArray: string[] = ['Lorem', 'Ipsum', 'Dolor', 'Sit'];
+
   public modifyFlatten(): void {
     this.flattenData.push(3, 5);
   }

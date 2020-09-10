@@ -1,5 +1,19 @@
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Sort By'"
+  [subTitle]="'Pipes'"
+>
+  <div body>
+    <h5>String Ascending</h5>
+    <p>{{ stringArray | sortBy }}</p>
+
+    <h5>String Descending</h5>
+    <p>{{ stringArray | sortBy: false }}</p>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Rich Text'"
   [subTitle]="'Pipes'"
 >
