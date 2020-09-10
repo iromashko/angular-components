@@ -8,7 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 const OTHER_ROUTES = [
   {
-    path: 'other',
+    path: '',
     component: OtherDocumentationComponent,
     canDeactivate: [FormDirtyGuard],
   },

@@ -51,6 +51,7 @@ import { FieldsetComponent } from './components/fieldset/fieldset.component';
 import { PillComponent } from './components/pill/pill.component';
 import { PillFiltersComponent } from './components/pill-filters/pill-filters.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { PasswordComponent } from './components/password/password.component';
 
 @NgModule({
   declarations: [
@@ -96,13 +97,14 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     PillComponent,
     PillFiltersComponent,
     NotFoundComponent,
+    PasswordComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
-    OtherModule,
     AppRoutingModule,
+    OtherModule,
     PipesModule,
     FormsModule,
     ReactiveFormsModule,
