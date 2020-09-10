@@ -14,5 +14,11 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [CommonModule],
   exports: [CardComponent, FilterTermPipe, SnackbarComponent, TabsComponent],
+  providers: [
+    {
+      provide: 'LocalStorage',
+      useValue: window.localStorage,
+    },
+  ],
 })
 export class SharedModule {}
