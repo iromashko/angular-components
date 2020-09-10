@@ -28,6 +28,11 @@ const APP_ROUTES: Routes = [
     component: ServicesDocumentationComponent,
   },
   {
+    data: { title: 'Services' },
+    path: 'services/:id',
+    component: ServicesDocumentationComponent,
+  },
+  {
     data: { title: 'Other' },
     path: 'other',
     loadChildren: () =>
