@@ -42,6 +42,7 @@ export class ComponentDocumentationComponent implements OnInit {
   };
   public loaded = true;
   public PillType = PillType;
+  public isShownOverlay = false;
 
   public socialMedia: ISocialMediaIcon[] = [
     { href: 'http://facebook.com', type: SocialMedia.Facebook },

@@ -52,6 +52,7 @@ import { PillComponent } from './components/pill/pill.component';
 import { PillFiltersComponent } from './components/pill-filters/pill-filters.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { PasswordComponent } from './components/password/password.component';
+import { OverlayComponent } from './components/overlay/overlay.component';
 
 @NgModule({
   declarations: [
@@ -98,6 +99,7 @@ import { PasswordComponent } from './components/password/password.component';
     PillFiltersComponent,
     NotFoundComponent,
     PasswordComponent,
+    OverlayComponent,
   ],
   imports: [
     BrowserModule,
