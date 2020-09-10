@@ -50,6 +50,7 @@ import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.com
 import { FieldsetComponent } from './components/fieldset/fieldset.component';
 import { PillComponent } from './components/pill/pill.component';
 import { PillFiltersComponent } from './components/pill-filters/pill-filters.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -94,16 +95,17 @@ import { PillFiltersComponent } from './components/pill-filters/pill-filters.com
     FieldsetComponent,
     PillComponent,
     PillFiltersComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
+    OtherModule,
     AppRoutingModule,
     PipesModule,
     FormsModule,
     ReactiveFormsModule,
-    OtherModule,
     HttpClientModule,
   ],
   providers: [

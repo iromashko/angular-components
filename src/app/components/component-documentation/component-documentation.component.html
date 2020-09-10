@@ -1,5 +1,15 @@
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Not Found'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <a routerLink="404">Go to Unknown Page</a>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Pill Filters'"
   [subTitle]="'Components'"
 >
@@ -85,14 +95,6 @@
     </p>
   </div>
   <button footer (click)="loaded = !loaded">Toggle</button>
-</app-card>
-
-<app-card
-  [iconClasses]="'fas fa-info-circle'"
-  [title]="'Footer'"
-  [subTitle]="'Components'"
->
-  <app-footer body></app-footer>
 </app-card>
 
 <app-card

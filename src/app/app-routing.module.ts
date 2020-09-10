@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { DirectivesDocumentationComponent } from './directives/directives-documentation/directives-documentation.component';
 import { ServicesDocumentationComponent } from './services/services-documentation/services-documentation.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const APP_ROUTES: Routes = [
   { path: '', component: ComponentDocumentationComponent },
@@ -13,6 +14,7 @@ const APP_ROUTES: Routes = [
       import('./pipes/pipes.module').then((m) => m.PipesModule),
   },
   { path: 'services', component: ServicesDocumentationComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
