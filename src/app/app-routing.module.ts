@@ -6,15 +6,29 @@ import { ServicesDocumentationComponent } from './services/services-documentatio
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const APP_ROUTES: Routes = [
-  { path: '', component: ComponentDocumentationComponent },
-  { path: 'directives', component: DirectivesDocumentationComponent },
   {
+    data: { title: 'Components' },
+    path: '',
+    component: ComponentDocumentationComponent,
+  },
+  {
+    data: { title: 'Directives' },
+    path: 'directives',
+    component: DirectivesDocumentationComponent,
+  },
+  {
+    data: { title: 'Pipes' },
     path: 'pipes',
     loadChildren: () =>
       import('./pipes/pipes.module').then((m) => m.PipesModule),
   },
-  { path: 'services', component: ServicesDocumentationComponent },
   {
+    data: { title: 'Services' },
+    path: 'services',
+    component: ServicesDocumentationComponent,
+  },
+  {
+    data: { title: 'Other' },
     path: 'other',
     loadChildren: () =>
       import('./other/other.module').then((m) => m.OtherModule),
