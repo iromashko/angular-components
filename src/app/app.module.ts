@@ -48,6 +48,7 @@ import { SocialMediaBarComponent } from './components/social-media-bar/social-me
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.component';
 import { FieldsetComponent } from './components/fieldset/fieldset.component';
+import { PillComponent } from './components/pill/pill.component';
 
 @NgModule({
   declarations: [
@@ -90,6 +91,7 @@ import { FieldsetComponent } from './components/fieldset/fieldset.component';
     SocialMediaBarComponent,
     BottomSheetComponent,
     FieldsetComponent,
+    PillComponent,
   ],
   imports: [
     BrowserModule,

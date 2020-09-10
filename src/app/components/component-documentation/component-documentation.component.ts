@@ -10,6 +10,7 @@ import { SocialMedia } from '../social-media-bar/social-media.enum';
 import { ISocialMediaIcon } from '../social-media-bar/social-media-icon.interface';
 import { delay } from 'rxjs/operators';
 import { of } from 'rxjs';
+import { PillType } from '../pill/pill-type.enum';
 
 @Component({
   selector: 'app-component-documentation',
@@ -40,6 +41,7 @@ export class ComponentDocumentationComponent implements OnInit {
     location: RibbonLocation.BottomLeft,
   };
   public loaded = true;
+  public PillType = PillType;
 
   public socialMedia: ISocialMediaIcon[] = [
     { href: 'http://facebook.com', type: SocialMedia.Facebook },
