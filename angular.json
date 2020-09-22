@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./src/assets/tachyons.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +124,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "y"
 }
